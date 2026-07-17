@@ -91,16 +91,20 @@ const walkFiles = (relDir) => {
   return files;
 };
 
+// al_folio_core exposes explicit site-customization slots via its `file_exists`/hook
+// pattern (e.g. `_layouts/bib.liquid` includes `_includes/hook/bib.liquid` when present).
+// These are meant to be starter/site-owned and aren't shadowing any upstream gem file.
+const isDocumentedHookPath = (filePath) => /^_includes[\\/]hook[\\/]/.test(filePath);
+
 // _layouts/_includes/_sass may contain files that locally override a gem-owned
 // file, as long as they're tracked in .al-folio-overrides.yml (see docs/BOUNDARIES.md).
 for (const overridablePath of ["_includes", "_layouts", "_sass"]) {
   if (!exists(overridablePath)) continue;
   for (const filePath of walkFiles(overridablePath)) {
-    if (!trackedOverridePaths.has(filePath)) {
-      failures.push(
-        `Starter must not own core component path \`${filePath}\`; move ownership to the corresponding gem, or track it as a local override in \`.al-folio-overrides.yml\` (see docs/BOUNDARIES.md).`
-      );
-    }
+    if (isDocumentedHookPath(filePath) || trackedOverridePaths.has(filePath)) continue;
+    failures.push(
+      `Starter must not own core component path \`${filePath}\`; move ownership to the corresponding gem, or track it as a local override in \`.al-folio-overrides.yml\` (see docs/BOUNDARIES.md).`
+    );
   }
 }
 
