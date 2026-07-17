@@ -2,15 +2,12 @@
 layout: about
 title: About
 permalink: /
-subtitle: Postdoctoral Associate at MIT. CUORE, CUPID, RES-NOVA.
+subtitle: Postdoctoral Associate at MIT
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: true # crops the image to make it circular
-  more_info: >
-    <p>Massachusetts Institute of Technology</p>
-    <p>Cambridge, MA, USA</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
