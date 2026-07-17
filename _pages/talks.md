@@ -7,23 +7,105 @@ nav: true
 nav_order: 2
 ---
 
-## Talks
+<style>
+  .talk-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 0.6rem 0;
+    border-bottom: 1px solid var(--global-divider-color);
+  }
+  .talk-row:last-child {
+    border-bottom: none;
+  }
+  .talk-date {
+    flex: 0 0 4.5rem;
+    text-align: right;
+    color: var(--global-text-color-light);
+    font-weight: 600;
+    padding-top: 0.15rem;
+  }
+  .talk-badge {
+    flex: 0 0 auto;
+    align-self: flex-start;
+    margin-top: 0.1rem;
+    padding: 0.15rem 0.6rem;
+    border-radius: 1rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #ffffff;
+    white-space: nowrap;
+  }
+  .talk-badge-talk {
+    background-color: var(--global-theme-color);
+  }
+  .talk-badge-poster {
+    background-color: #8e44ad;
+  }
+  .talk-body {
+    flex: 1 1 auto;
+  }
+  .talk-conference {
+    font-weight: 600;
+  }
+  .talk-title {
+    font-style: italic;
+    color: var(--global-text-color-light);
+  }
+  .talk-meta {
+    font-size: 0.9rem;
+    color: var(--global-text-color-light);
+  }
+</style>
 
-- Contributed Talk at LTD 2025 about the latest results from the CUORE experiment.
-- Invited seminar at Yale about precision spectral shape measurements of β decays with cryogenic calorimeters.
-- Parallel Talk at TAUP 2023 about the first results on the CUORE background model, part of my thesis work, Vienna.
-- Talk at Rencontres du Vietnam, Windows on the Universe 2023 about the latest CUORE and CUPID results, Quy Nhon - Vietnam.
-- Talk at ISSP EMFCSC 2023 about the CUORE background model, Erice - Italy.
-- Talk at IFAE 2023 about the Res Nova proposed experiment (best talk in Section "New Technologies"), Catania.
-- Talk at PSI2022 about the latest CUORE results, Baden - Switzerland.
-- Talk at XIX International Workshop on Neutrino Telescopes about my Master Thesis work, Virtual. DOI [10.5281/zenodo.5744979](https://doi.org/10.5281/zenodo.5744979).
-- Talk at SIF 106th National Congress about my Master Thesis work, Virtual.
+## Conferences
 
-## Posters
+<div class="talks-list">
+  {% for entry in site.data.talks.conferences %}
+    <div class="talk-row">
+      <div class="talk-date">{{ entry.date }}</div>
+      <div class="talk-badge talk-badge-{{ entry.type | downcase }}">{{ entry.type }}</div>
+      <div class="talk-body">
+        <div class="talk-conference">
+          {% if entry.link %}
+            <a href="{{ entry.link }}" target="_blank" rel="noopener">{{ entry.conference }}</a>
+          {% else %}
+            {{ entry.conference }}
+          {% endif %}
+        </div>
+        {% if entry.title and entry.title != "" %}
+          <div class="talk-title">{{ entry.title }}</div>
+        {% endif %}
+        {% if (entry.location and entry.location != "") or entry.note %}
+          <div class="talk-meta">
+            {{ entry.location }}
+            {% if entry.location != "" and entry.note %} — {% endif %}
+            {{ entry.note }}
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  {% endfor %}
+</div>
 
-- Poster at Neutrino 2024 about the results of the CUORE background model, part of my thesis work.
-- Poster at CryoCourse 2022 about the ACCESS project, Heidelberg.
-- Poster at Neutrino 2022 about my work on the CUORE background model, Virtual.
+## Seminars
+
+<div class="talks-list">
+  {% for entry in site.data.talks.seminars %}
+    <div class="talk-row">
+      <div class="talk-date">{{ entry.date }}</div>
+      <div class="talk-body">
+        <div class="talk-conference">{{ entry.conference }}</div>
+        {% if entry.title and entry.title != "" %}
+          <div class="talk-title">{{ entry.title }}</div>
+        {% endif %}
+        {% if entry.location and entry.location != "" %}
+          <div class="talk-meta">{{ entry.location }}</div>
+        {% endif %}
+      </div>
+    </div>
+  {% endfor %}
+</div>
 
 ## Proceedings
 

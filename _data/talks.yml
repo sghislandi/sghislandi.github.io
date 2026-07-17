@@ -1,0 +1,74 @@
+conferences:
+  - date: "2025"
+    type: Talk
+    conference: LTD 2025
+    title: ""
+    location: ""
+
+  - date: "2024"
+    type: Poster
+    conference: Neutrino 2024
+    title: ""
+    location: ""
+
+  - date: "2023"
+    type: Talk
+    conference: TAUP 2023
+    title: ""
+    location: "Vienna, Austria"
+
+  - date: "2023"
+    type: Talk
+    conference: "Rencontres du Vietnam – Windows on the Universe 2023"
+    title: ""
+    location: "Quy Nhon, Vietnam"
+
+  - date: "2023"
+    type: Talk
+    conference: ISSP EMFCSC 2023
+    title: ""
+    location: "Erice, Italy"
+
+  - date: "2023"
+    type: Talk
+    conference: IFAE 2023
+    title: ""
+    location: "Catania, Italy"
+    note: 'Best talk, section "New Technologies"'
+
+  - date: "2022"
+    type: Talk
+    conference: PSI2022
+    title: ""
+    location: "Baden, Switzerland"
+
+  - date: "2022"
+    type: Poster
+    conference: CryoCourse 2022
+    title: ""
+    location: "Heidelberg, Germany"
+
+  - date: "2022"
+    type: Poster
+    conference: Neutrino 2022
+    title: ""
+    location: "Virtual"
+
+  - date: ""
+    type: Talk
+    conference: XIX International Workshop on Neutrino Telescopes
+    title: ""
+    location: "Virtual"
+    link: https://doi.org/10.5281/zenodo.5744979
+
+  - date: ""
+    type: Talk
+    conference: SIF 106th National Congress
+    title: ""
+    location: "Virtual"
+
+seminars:
+  - date: ""
+    conference: Yale University
+    title: ""
+    location: ""

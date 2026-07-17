@@ -80,6 +80,7 @@ cv:
 
       - title: Giovanni Polvani Prize
         awarder: Italian Physics Society (SIF)
+        date: 2023
         summary: "Euro 1,000 prize awarded for scientific industriousness."
 
       - title: Oreste Piccioni Diploma
@@ -121,6 +122,7 @@ cv:
 
       - name: Operating Systems
         keywords:
+          - MacOS
           - Unix/Linux
           - Windows (basic knowledge)
 
@@ -149,21 +151,11 @@ cv:
       - name: French
         summary: Basic
 
-    Interests:
-      - name: Scientific Interests
-        keywords:
-          - Neutrinoless double beta decay searches
-          - Neutrino physics and astrophysics
-          - Low radioactivity techniques
-          - Cryogenic detectors development and cryogenic systems
-          - Monte Carlo simulations
-
     Outreach:
-      - bullet: "**Scientific Committee Member**, Premio Asimov (2021–2024)"
-      - bullet: "**Member of the Local Organizing Committee**, IDM 2024 conference (Mar–Jun 2024)"
-      - bullet: "**Sharper 2022**, researcher night, L'Aquila (30 Sep 2022)"
-      - bullet: "**Sharper 2021**, researcher night, L'Aquila (24 Sep 2021)"
-      - bullet: "Contributions to the INFN-LNGS CUPID public webpage (2022–Present)"
+      - bullet: "**Scientific Committee Member**, Premio Asimov (2021-2026)"
+      - bullet: "**Member of the Local Organizing Committee**, IDM 2024 conference (Mar-Jun 2024)"
+      - bullet: "**Sharper**, researcher night, L'Aquila (2021-2024)"
+      - bullet: "Contributions to the INFN-LNGS CUPID public webpage (2022-2024)"
 
     Schools and Workshops:
       - bullet: "International School of Subnuclear Physics (ISSP EMFCSC) 2023, Erice"
