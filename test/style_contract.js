@@ -61,7 +61,50 @@ if (/gem 'al_math',\s*:git =>/.test(gemfile)) {
   failures.push("`Gemfile` must not use git-branch pin for `al_math`; use released gem version.");
 }
 
-for (const forbiddenPath of ["_includes", "_layouts", "_sass", "_scripts", "assets/tailwind", "tailwind.config.js", "assets/webfonts"]) {
+const trackedOverridePaths = new Set();
+if (exists(".al-folio-overrides.yml")) {
+  const overridesYaml = read(".al-folio-overrides.yml");
+  const overridesSectionMatch = overridesYaml.match(/^overrides:\n([\s\S]*)$/m);
+  if (overridesSectionMatch) {
+    for (const line of overridesSectionMatch[1].split("\n")) {
+      const keyMatch = line.match(/^ {2}(\S+):\s*$/);
+      if (keyMatch) {
+        trackedOverridePaths.add(keyMatch[1]);
+      } else if (line.length > 0 && !/^ {2,}/.test(line)) {
+        break;
+      }
+    }
+  }
+}
+
+const walkFiles = (relDir) => {
+  const files = [];
+  const entries = fs.readdirSync(path.join(root, relDir), { withFileTypes: true });
+  for (const entry of entries) {
+    const entryRelPath = path.join(relDir, entry.name);
+    if (entry.isDirectory()) {
+      files.push(...walkFiles(entryRelPath));
+    } else {
+      files.push(entryRelPath);
+    }
+  }
+  return files;
+};
+
+// _layouts/_includes/_sass may contain files that locally override a gem-owned
+// file, as long as they're tracked in .al-folio-overrides.yml (see docs/BOUNDARIES.md).
+for (const overridablePath of ["_includes", "_layouts", "_sass"]) {
+  if (!exists(overridablePath)) continue;
+  for (const filePath of walkFiles(overridablePath)) {
+    if (!trackedOverridePaths.has(filePath)) {
+      failures.push(
+        `Starter must not own core component path \`${filePath}\`; move ownership to the corresponding gem, or track it as a local override in \`.al-folio-overrides.yml\` (see docs/BOUNDARIES.md).`
+      );
+    }
+  }
+}
+
+for (const forbiddenPath of ["_scripts", "assets/tailwind", "tailwind.config.js", "assets/webfonts"]) {
   if (exists(forbiddenPath)) {
     failures.push(`Starter must not own core component path \`${forbiddenPath}\`; move ownership to the corresponding gem.`);
   }
