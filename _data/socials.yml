@@ -5,7 +5,7 @@ cv_pdf: /assets/pdf/CV_Stefano_Ghislandi.pdf # path to your CV PDF file
 email: sghislan@mit.edu # your email address
 orcid_id: 0000-0003-0232-1249 # your ORCID iD
 github_username: sghislandi # your GitHub username
-rss_icon: true # comment this line to hide the RSS icon
+# rss_icon: true # comment this line to hide the RSS icon
 # scholar_userid: # your Google Scholar ID, fill in once you have a profile
 # wechat_qr: # filename of your wechat qr-code saved as an image (e.g., wechat-qr.png if saved to assets/img/wechat-qr.png)
 # whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
