@@ -1,74 +1,144 @@
 conferences:
-  - date: "2025"
+  - year: 2026
+    date: "2026-06-25"
+    type: Talk
+    conference: Neutrino 2026
+    title: "Towards CUPID-1T: microwave multiplexing for large arrays of macrocalorimeters"
+    link: "https://indico.global/event/15740/contributions/147776/"
+    location: "Irvine, CA, USA"
+    note: ""
+
+  - year: 2025
+    date: "2025-06-3"
     type: Talk
     conference: LTD 2025
-    title: ""
-    location: ""
+    title: "Latest Update on the CUORE experiment"
+    link: "https://docs.google.com/presentation/d/1HEplbAbpUbpQAXNBgzGGF-62415o8sEHMPNncqXJgo4/edit?usp=sharing"
+    location: "Santa Fe, NM, USA"
+    note: ""
 
-  - date: "2024"
+  - year: 2025
+    date: "2025-10-19"
+    type: Talk
+    conference: DNP 2025
+    title: "Most precise measurement of 2νββ half-life and shape of 130Te with CUORE"
+    link: "https://docs.google.com/presentation/d/1ZIT0kDD_IDB5Oi9VGoPcCQPpG57LNDLTf8FzAc6_-9M/edit?usp=sharing"
+    location: "Chicago, IL, USA"
+    note: ""
+
+  - year: 2024
+    date: "2024-06-17"
     type: Poster
     conference: Neutrino 2024
-    title: ""
-    location: ""
+    title: "Background decomposition of the CUORE experiment and measurement of the 2νββ half-life of 130Te"
+    link: "https://docs.google.com/presentation/d/1fFSl69iaY0WeGxrLKJSjSuoksRMUNmBkoJnTWoRqjUo/edit?usp=sharing"
+    location: "Milan, Italy"
+    note: "Best poster award"
 
-  - date: "2023"
+  - year: 2024
+    date: "2024-10-02"
+    type: Poster
+    conference: Low Radiation Techniques 2024
+    title: "Data-driven background model for the CUORE experiment and measurement of the 2νββ of 130Te"
+    link: "https://docs.google.com/presentation/d/1Bd-q2J4Bd5b27Q-SL9rzJSmfFD0frTxhZvgsfaF3SfQ/edit?usp=sharing"
+    location: "Krakow, Poland"
+    note: ""
+
+  - year: 2024
+    date: "2024-09-1"
+    type: Talk
+    conference: ICNFP 2024
+    title: "Latest results from the CUORE experiment"
+    link: "https://docs.google.com/presentation/d/1NqIb4wNWaevXFoW8WxnWkWz5c44AZK67N2eRmCOSLr8/edit?usp=sharing"
+    location: "Crete, Greece"
+    note: ""
+
+  - year: 2023
+    date: "2023-08-29"
     type: Talk
     conference: TAUP 2023
-    title: ""
+    title: "First results from the CUORE background model"
+    link: "https://indico.cern.ch/event/1199289/contributions/5447161/"
     location: "Vienna, Austria"
+    note: ""
 
-  - date: "2023"
+  - year: 2023
+    date: "2023-08-08"
     type: Talk
-    conference: "Rencontres du Vietnam – Windows on the Universe 2023"
-    title: ""
+    conference: "Rencontres du Vietnam - Windows on the Universe 2023"
+    title: "The CUORE and CUPID double beta decay experiments"
+    link: "http://vietnam.in2p3.fr/2023/windows/transparencies/02_tuesday/HEP_Parallel_T3/03_Ghislandi.pdf"
     location: "Quy Nhon, Vietnam"
+    note: ""
 
-  - date: "2023"
-    type: Talk
+  - year: 2023
+    date: "2023-06-20"
+    type: Talk + Poster
     conference: ISSP EMFCSC 2023
-    title: ""
+    title: "Background modeling for low temperature physics"
+    link: "https://docs.google.com/presentation/d/1p5x4e3joURd-2F8I2qrnrSyg4xYPnBFBASxBg4UcuiM/edit?usp=sharing"
     location: "Erice, Italy"
+    note: "Won the Oreste Piccioni Diploma as a mention for the contribution"
 
-  - date: "2023"
+  - year: 2023
+    date: "2023-04-12"
     type: Talk
     conference: IFAE 2023
-    title: ""
+    title: "Neutrini da supernova con l'esperimento RES-NOVA"
+    link: "https://agenda.infn.it/event/34702/contributions/195164/attachments/103786/145567/RES-NOVA_StefanoGhislandi_IFAE2023.pdf"
     location: "Catania, Italy"
     note: 'Best talk, section "New Technologies"'
 
-  - date: "2022"
+  - year: 2022
+    date: "2022-10-20"
     type: Talk
-    conference: PSI2022
-    title: ""
+    conference: Physics of fundamental symmetries and interactions 2022
+    title: "Search for Neutrinoless Double Beta Decay of 130Te: latest results from the CUORE experiment"
+    link: "https://indico.psi.ch/event/11742/contributions/38676/attachments/23253/41163/CUOREResults_PSI2022_Ghislandi.pdf"
     location: "Baden, Switzerland"
+    note: ""
 
-  - date: "2022"
+  - year: 2022
+    date: "2022-09-15"
     type: Poster
     conference: CryoCourse 2022
-    title: ""
+    title: "Development of Cryogenic Calorimeters to Study the Spectral Shape of Forbidden 𝛽 Decays"
+    link: "https://docs.google.com/presentation/d/1AK-7xnVrZMlGVwAFzR0G3kgzJ_xPzrD1h9ES0bJHEWI/edit?usp=sharing"
     location: "Heidelberg, Germany"
+    note: ""
 
-  - date: "2022"
+  - year: 2022
+    date: "2022-06-02"
     type: Poster
     conference: Neutrino 2022
-    title: ""
-    location: "Virtual"
+    title: "Status and perspectives of the CUORE background model"
+    link: "https://indico.kps.or.kr/event/30/contributions/642/"
+    location: "Seoul, South Korea"
+    note: "Virtual meeting"
 
-  - date: ""
+  - year: 2021
+    date: "2021-02-23" # confirmed from the Zenodo record's parallel-session date
     type: Talk
     conference: XIX International Workshop on Neutrino Telescopes
-    title: ""
-    location: "Virtual"
+    title: "γ Background Reduction in 0νββ Searches with Organic Compound Holder"
     link: https://doi.org/10.5281/zenodo.5744979
+    location: "Virtual"
+    note: ""
 
-  - date: ""
+  - year: "" # TODO: unknown year, please fill in
+    date: "" # TODO: unknown date, please fill in
     type: Talk
     conference: SIF 106th National Congress
     title: ""
+    link: ""
     location: "Virtual"
+    note: ""
 
 seminars:
-  - date: ""
-    conference: Yale University
-    title: ""
-    location: ""
+  - year: "2024"
+    date: "2024-10-14"
+    conference: Yale University - NPA Seminar
+    title: "High-precision spectral shape measurements with cryogenic calorimeters"
+    link: "https://physics.yale.edu/event/npa-seminar-stefano-ghislandi-laboratori-nazionali-del-gran-sasso"
+    location: "New Haven, CT, USA"
+    note: ""
